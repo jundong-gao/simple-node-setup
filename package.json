@@ -1,11 +1,11 @@
 {
   "name": "simple-node-setup",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "node服务快速构建工具",
   "main": "index.js",
   "type": "module",
   "private": false,
-  "license": "MIT",
+  "license": "ISC",
   "repository": {
     "type": "git",
     "url": "https://github.com/jundong-gao/simple-node-setup"
@@ -20,14 +20,19 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["node-setup", "koa", "koa-router", "express"],
+  "keywords": [
+    "node-setup",
+    "koa",
+    "koa-router",
+    "express"
+  ],
   "author": "",
-  "license": "ISC",
   "dependencies": {
     "chalk": "^4.1.1",
     "ejs": "^3.1.6",
     "execa": "^5.1.1",
     "express": "^4.17.1",
+    "figlet": "^1.5.0",
     "fs": "0.0.1-security",
     "inquirer": "^8.1.2",
     "koa": "^2.13.1",
