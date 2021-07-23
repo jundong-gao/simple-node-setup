@@ -7,6 +7,17 @@ import question from './question/index.js'
 import { createConfig } from './config.js'
 import execa from 'execa'
 import chalk from 'chalk'
+import figlet from 'figlet'
+
+
+
+console.log(figlet.textSync('node - setup', {
+    // font: 'Ghost',
+    horizontalLayout: 'default',
+    verticalLayout: 'default',
+    width: 80,
+    whitespaceBreak: true,
+}));
 
 const answer = await question()
 

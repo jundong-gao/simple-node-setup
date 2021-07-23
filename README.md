@@ -16,4 +16,4 @@ node-setup
 
 
 ### Bugs
-- 如果你发现了bug，请在github上告诉我 [123](http://qqq.com)
+- 如果你发现了bug，请在github上告诉我 [https://github.com/jundong-gao/simple-node-setup](https://github.com/jundong-gao/simple-node-setup)

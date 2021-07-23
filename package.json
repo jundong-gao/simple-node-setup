@@ -1,9 +1,15 @@
 {
   "name": "simple-node-setup",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "node服务快速构建工具",
   "main": "index.js",
   "type": "module",
+  "private": false,
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jundong-gao/simple-node-setup"
+  },
   "bin": {
     "node-setup": "./bin/index.js"
   },
