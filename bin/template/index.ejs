@@ -1,0 +1,46 @@
+const chalk = require('chalk')
+<% if(framework == 'Express'){ %> 
+    const express = require('express')
+    const app = express()
+    
+    app.use(express.static('static'))
+    
+    app.get('/', (req, res) => {
+        res.send('hello  welcome use node + express')
+    })
+    
+    
+    app.listen(<%= port %> , () => {
+        console.log(chalk.blue(`
+            server running at ==> http://localhost:<%= port %>
+        `));
+    })
+
+<% } %> 
+
+
+
+
+
+
+<% if(framework == 'Koa'){ %> 
+const Koa = require('koa')
+const Router = require('koa-router')
+const server = require('koa-static')
+
+const app = new Koa()
+app.use(server(__dirname + '/static'))
+
+const router = new Router()
+router.get('/', ctx => {
+    ctx.body = 'hello  welcome use node + Koa'
+})
+
+app.use(router.routes())
+
+app.listen(<%= port %> , () => {
+    console.log(chalk.blue(`
+        server running at ==> http://localhost:<%= port %>
+    `));
+})
+<% } %> 
